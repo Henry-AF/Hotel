@@ -22,6 +22,8 @@ import adminRoutes from './controllers/admin.js';
 app.use(adminRoutes);
 import login from './controllers/login.js';
 app.use(login);
+import cadastro from './controllers/cadastro.js'
+app.use(cadastro)
 
 // Start the server
 const PORT = process.env.PORT || 3000;

@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
 </head>
 <body>
-
+    
     <img class="fundo" src="/img/images/admin-fundo.svg" alt="">
 
     <div class="login-container">
-        <h2>Administrative Access</h2>
-        
+        <h2>Create Account</h2>
+        <div class="link">
+            <p>Already have an account? </p><a href="/login">Login</a>
+        </div>
         <form action="/" method="POST">
+            <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required><br><br>
+            <div class="senha__">
+                <div class="checkbox">
+                    <input type="checkbox"><p>Lembrar senha</p>
+                </div>
+                <a href="">Forget my password?</a>
+            </div>
             <button type="submit">Enter</button>
         </form>
     </div>
+
 </body>
 </html>
