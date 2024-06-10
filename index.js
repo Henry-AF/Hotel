@@ -31,6 +31,8 @@ import cadastro from './controllers/cadastro.js';
 app.use(cadastro);
 import dashboard from './controllers/dashboard.js';
 app.use(dashboard);
+import checkout from './controllers/checkout.js';
+app.use(checkout);
 
 // Start the server
 const PORT = process.env.PORT || 3000;

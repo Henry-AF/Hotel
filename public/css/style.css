@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #DEE7E7;
+  border-radius: 25px;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.date img {
+width: 75%;
+height: auto;
+}
+
+.cardzao{
+width: 625px;
+height: 300px;
+background-color: #ffffff;
+border-radius: 20px;
+}
+
+.cardzao h5 {
+color: #FFA800;
+}
+
+.textos ul{
+list-style: none;
+}
+
+.textos li {
+font-weight: 600;
+font-size: 20px;
+}
+
+.cardzao button{
+background-color: #FFA800;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+font-size: 30px;
+}
+
+.cardzao button:hover {
+  background-color: #d69005;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+font-size: 30px;
+}
+
+p.textinho {
+color: #FFA800;
+}
