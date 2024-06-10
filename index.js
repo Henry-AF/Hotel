@@ -17,6 +17,10 @@ app.set('view engine', 'ejs');
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => {
+  res.render('landing/landing.ejs'); // Renderiza a view 'index.ejs' na primeira visita
+});
+
 // Other middleware and routes
 import adminRoutes from './controllers/admin.js';
 app.use(adminRoutes);
