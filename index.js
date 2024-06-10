@@ -17,17 +17,20 @@ app.set('view engine', 'ejs');
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Render landing page on root access
 app.get('/', (req, res) => {
-  res.render('landing/landing.ejs'); // Renderiza a view 'index.ejs' na primeira visita
+  res.render('landing/landing'); // Renderiza a view 'landing.ejs' na primeira visita
 });
 
-// Other middleware and routes
+// Import routes
 import adminRoutes from './controllers/admin.js';
 app.use(adminRoutes);
 import login from './controllers/login.js';
 app.use(login);
-import cadastro from './controllers/cadastro.js'
-app.use(cadastro)
+import cadastro from './controllers/cadastro.js';
+app.use(cadastro);
+import dashboard from './controllers/dashboard.js';
+app.use(dashboard);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
